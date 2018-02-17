@@ -1,0 +1,62 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+}
+
+#titlebar{
+  background-color: #A346A6;
+  color: #FFF;
+  text-align: center;
+  padding:0px;
+}
+
+#titlebar h1{
+  margin-bottom:0px;
+}
+
+#titlebar a{
+  color: #FFF;
+}
+
+#titlebar a:hover{
+
+}
+
+.nav{
+  padding: 10px 5px;
+}
+
+.nav:hover{
+  background-color: #F4CCF5;
+  color:#A346A6;
+}
+
+img{
+  width:100%;
+}
+
+.club{
+  background-color: #F4CCF5;
+  margin:auto;
+  margin-bottom: 5%;
+
+  padding: 5% 10%;
+  border-left: 5px #A346A6 solid;
+  border-right: 5px #A346A6 solid;
+
+}
+
+.club h2{
+
+}
+
+.myslides img{
+  max-height: 40px;
+}
+
+.important{
+  border: 5px #A346A6 solid;
+  padding: 5% 10%;
+}

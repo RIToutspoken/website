@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>The Umbrella</title>
+  <meta name="description" content="RIT's Queer Clubs and Organizations">
+  <meta name="author" content="Emily Turner">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicons/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <div id="titlebar">
+        <div class="row">
+            <div class="twelve columns"><h1><a href="index.html">THE UMBRELLA</a></h1></div>
+        </div>
+        <div class="row">
+            <div class="nav four columns"><a href="index.html">ABOUT</a></div>
+            <div class="nav four columns"><a href="clubs.html">CLUBS</a></div>
+            <div class="nav four columns"><a href="resources.html">RESOURCES</a></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <img class="mySlides" src="images\Slide Show\prideproject.jpg">
+            <a href="https://sites.sg.rit.edu/aca/"><img class="mySlides" src="images\Slide Show\ACA.png"></a>
+            <img class="mySlides" src="img_mountains.jpg">
+            <img class="mySlides" src="img_forest.jpg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="important twelve columns">
+            <h2>WELCOME</h2>
+            <p>
+                The purpose of this page is to compile all of RIT's LGBTQ+ resources into one concise website. The page is hosted by OUTspoken's <a href="https://github.com/RIToutspoken/website" style="color:blueviolet">Github</a>. If you want to contribute new resources or provide site feedback, please email outspoken@rit.edu.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="important twelve columns">
+                <h2>RIT's Diversity Policy</h2>
+                <p>RIT through its policies and practices is responsible for building an inclusive environment 
+                    where membership in the community allows for faculty, staff and students to reach their 
+                    fullest potential, both professionally and personally. RIT is committed to the development, 
+                    administration and interpretation of policies and procedures in a way that is consistent with 
+                    our commitment to diversity and is in compliance with federal, state and local laws. RIT’s 
+                    policies and procedures are administered in a way that supports fair treatment for all faculty, 
+                    staff, students, and the RIT community at large.
+                </p>
+        </div>
+
+
+    </div>
+    
+    
+</div>
+
+<!-- Slideshow Javascript from W3Schools -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

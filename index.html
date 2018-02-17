@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,24 +35,19 @@
   <div class="container">
 
     <div id="titlebar">
-        <div class="row">
-            <div class="twelve columns"><h1><a href="index.html">THE UMBRELLA</a></h1></div>
-        </div>
-        <div class="row">
-            <div class="nav four columns"><a href="index.html">ABOUT</a></div>
-            <div class="nav four columns"><a href="clubs.html">CLUBS</a></div>
-            <div class="nav four columns"><a href="resources.html">RESOURCES</a></div>
+        <h1><a href="index.html">THE UMBRELLA</a></h1>
+        <div class="navbar row">
+        <div class="nav four columns"><a href="index.html">ABOUT</a></div>
+        <div class="nav four columns"><a href="clubs.html">CLUBS</a></div>
+        <div class="nav four columns"><a href="resources.html">RESOURCES</a></div>
         </div>
     </div>
 
     <div class="row">
         <div class="twelve columns">
-            <img class="mySlides" src="images\Slide Show\prideproject.jpg">
-            <a href="https://sites.sg.rit.edu/aca/"><img class="mySlides" src="images\Slide Show\ACA.png"></a>
-            <img class="mySlides" src="img_mountains.jpg">
-            <img class="mySlides" src="img_forest.jpg">
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            <img class="mySlides" src="images\Slide Show\OUTspoken_Card_WEB.png">
+            <img class="mySlides" src="images\Slide Show\ritGA_Card_WEB.png">
+            <img class="mySlides" src="images\Slide Show\Spectrum_Card_WEB.png">
         </div>
     </div>
 
@@ -78,7 +73,14 @@
                 </p>
         </div>
 
+    </div>
 
+    <div class="row credits">
+        <div class="twelve columns">
+            <p>This page is made using the <a href="http://getskeleton.com/">Skeleton framework</a>.</p>
+            <p>All banner images made by <a href="https://www.linkedin.com/in/declan-behan-53713b127/">Declan Behan</a> who retains all rights thereof.</p>
+
+        </div>
     </div>
     
     
@@ -86,22 +88,19 @@
 
 <!-- Slideshow Javascript from W3Schools -->
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+var slideIndex = 0;
+carousel();
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
+function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+      x[i].style.display = "none"; 
     }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 </script>

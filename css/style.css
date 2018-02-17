@@ -1,36 +1,47 @@
 *{
-  font-family: 'Roboto', sans-serif;
+  
 }
 
 h1{
 }
 
+div{
+  font-family: 'Roboto', sans-serif;
+}
+
 #titlebar{
-  background-color: #A346A6;
+  background-color: black;
   color: #FFF;
   text-align: center;
   padding:0px;
+  position: sticky;
+  top:0px;
 }
 
 #titlebar h1{
+  font-family: 'Kaushan Script', cursive;
   margin-bottom:0px;
+  
 }
 
 #titlebar a{
   color: #FFF;
 }
 
-#titlebar a:hover{
+.important h2{
+  font-family: 'Kaushan Script', cursive;
 
 }
+
+  
 
 .nav{
   padding: 10px 5px;
 }
 
 .nav:hover{
-  background-color: #F4CCF5;
-  color:#A346A6;
+  background-color: gray;
+  color:black;
 }
 
 img{
@@ -38,18 +49,55 @@ img{
 }
 
 .club{
-  background-color: #F4CCF5;
   margin:auto;
   margin-bottom: 5%;
-
   padding: 5% 10%;
-  border-left: 5px #A346A6 solid;
-  border-right: 5px #A346A6 solid;
 
 }
 
 .club h2{
+  font-family: 'Kaushan Script', cursive;
+}
 
+.red{
+  border-left: 5px red solid;
+  border-right: 5px red solid;
+  background-color: #ffb7b7;
+}
+
+.orange{
+  border-left: 5px orangered solid;
+  border-right: 5px orangered solid;
+  background-color: #ffddb7;
+}
+
+.yellow{
+  border-left: 5px yellow solid;
+  border-right: 5px yellow solid;
+  background-color: #f7ffb7;
+}
+
+.green{
+  border-left: 5px green solid;
+  border-right: 5px green solid;
+  background-color: #bdffb7;
+}
+
+.blue{
+  border-left: 5px blue solid;
+  border-right: 5px blue solid;
+  background-color: #b7cbff;
+}
+
+.purple{
+  border-left: 5px purple solid;
+  border-right: 5px purple solid;
+  background-color: #e3b7ff;
+}
+
+.navbar{
+  position: sticky;
+  top:0px;
 }
 
 .myslides img{
@@ -57,6 +105,16 @@ img{
 }
 
 .important{
-  border: 5px #A346A6 solid;
+  border: 5px black solid;
   padding: 5% 10%;
+}
+
+.credits{
+  color:white;
+  background-color: black;
+  padding: 5% 10%;
+}
+
+a{
+  color:white;
 }
